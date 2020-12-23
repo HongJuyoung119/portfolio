@@ -1,68 +1,107 @@
 *{
-  margin:0;
+  margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
 }
 
-header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-width: 600px;
-  padding: 40px;
-  background-color: #333333;
-  color: white;
-  display: flex;
-  flex-direction: row;
+#wrapper {
+  width: 960px;
+  /*
+  max-width: 1280px;
+  min-width: 512px;
+  */
+  margin: 0 auto;
 }
 
-header h1{
-  margin-right: auto;
-}
+header {
+   position:relative;
+   height: 8rem;
+   background:#d8bfd8;
+   box-shadow: 0 4px 0.3125rem rgba(0,0,0,.3);
+ }
+
+  header h1{
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    font-size: 2rem;
+    color:#9370db;
+  }
 
 nav {
-  margin-right: 40px;
+  padding: 1rem 3rem ;
+  background: #333;
 }
 
-nav ul {
+  nav ul{
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav ul li{
+    margin-right: 2rem;
+  }
+
+  nav ul li a {
+    color: white;
+  }
+
+main{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-right: 2.5rem;
 }
 
-nav ul li{
-  margin: 0 .5rem;
+  section{
+    padding: 3rem;
+    background: #EEE;
+  }
+
+
+#box1{
+  width:70%;
+  height:80px;
+  background-color: lavender;
 }
 
-nav a{
+    article{
+      min-height: 8rem;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      background: #FFF;
+    }
+
+  #box2{
+      width:700px;
+      height:175px;
+      background-color: lavender;
+    }
+
+/*
+  aside{
+    flex: 1;
+    padding: 3rem;
+    background: #DDD;
+  }
+
+  */
+
+  #box3{
+    width:500px;
+    height:240px;
+    background-color: lavender;
+  }
+
+
+footer {
+  padding: 2rem 3rem;
+  text-align: center;
+  background: #333;
   color: white;
 }
 
-#wrapper {
-margin-top: 160px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 960px;
-  display: flex;
-  flex-direction: column;
-}
-
-section {
-  padding: 40px;
-  height: 500px;
-  background-color: #dddddd;
-  margin-bottom: 40px;
-}
-
-section h1{
-  margin-bottom: 1rem;
-}
-
-footer{
-  padding: 40px;
-  background-color: #333333;
-  color: white;
+#box4{
+  width:100%;
+  height:350px;
+  background-color: lavender;
 }
